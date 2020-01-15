@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather Now</title>
+		<link rel="icon" href="../style/img/icona.png">
+		<meta name="author" content="Pierluca Corti">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style/css/css.css">
+		<script src="../js/jQuery.js" rel="text/javascript"></script>
+		<script src="../js/sweetalert.min.js" rel="text/javascript"></script>
+		<script src="../js/weather.js" rel="text/javascript"></script>
+	</head>
+	<body>
+		<div id="page-content">
+			<header>
+				<div class="header" id="header">
+					<p class="title1" title="Weather Now">Weather Now</p>
+					<p class="sub-title1">tutto sul meteo ora!</p>
+				</div>
+			</header>
+			<div class="search-bar" align="center">
+				<form id="request" method="POST">
+					<table style="width: 100%">
+						<tr>
+							<td align="left">
+								<input type="text" id="city" name="city" autocomplete="city" autocomplete="city id" class="search-box" id="request" placeholder="Inserisci una città" title="Inserisci una città.">
+							</td>
+							<td align="right">
+								<button type="submit" class="button">Cerca</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<main>
+			<div class="main-result">
+				<a class="title" id="city-name"></a>
+				<a class="sub-title" id="country"></a>
+				<a class="info" id="city-id"></a>
+				<div class="instant-info">
+					<a id="state"></a>
+					<br>
+					<a id="temp"></a>
+				</div>
+				<div id="main-measures">
+					<table>
+						<tr>
+							<td class="left">
+								<a >temperature massime</a>
+							</td>
+							<td class="rigth">
+								<a id="temp-max"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<a>temperature minime</a>
+							</td>
+							<td class="rigth">
+								<a id="temp-min"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<a>umidità</a>
+							</td>
+							<td class="rigth">
+								<a id="humidity"></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">
+								<a>velocità vento: </a>
+							</td>
+							<td class="rigth">
+								<a id="speed"></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</main>
+		</div>
+		<div class="footer">
+			<div id="credits">
+				<br>
+				<br>
+				<a href="https://openweathermap.org/"><img class="icon" src="../style/img/own.png"></a>
+				<a href="https://jquery.com/"><img class="icon" src="../style/img/jQuery.png"></a>
+				<a href="https://sweetalert.js.org/"><img class="icon" src="../style/img/swal.svg"></a>
+			</div>
+			<br>
+			<p>Wheather Now</p>
+		</div>
+	</body>
+</html>

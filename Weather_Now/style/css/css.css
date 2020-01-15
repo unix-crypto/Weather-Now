@@ -1,0 +1,222 @@
+/**********************
+		font importati
+**********************/
+
+@font-face{
+	font-family: 'Prova';
+	src: url(../font/BebasNeue-Regular.ttf) format("truetype");
+}
+
+/**********************
+			generali
+**********************/
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+a, p, button{
+	color: #FFF;
+	font-family: 'prova';
+}
+body{
+	background-color: #222;
+}
+div#page-content{
+	height: auto;
+	padding-bottom: 50px;
+
+}
+div.page-content{
+	background-image: url("../img/BG.jpg");
+}
+
+/**********************
+		WN Home style
+**********************/
+
+div.main{
+	width: 700px;
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 15px;
+	text-align: center;
+	border: 4px black solid;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+p.articolo{
+	text-align: justify;
+	font-size: 20px;
+}
+img.esempi{
+	height: 300px;
+	width: auto;
+	margin: 20px;
+	margin-top: 0px;
+	border-radius: 15px;
+	border: 2px solid black;
+}
+p.sub-title{
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+div.bottone-home{
+	background-color: black;
+	margin: auto;
+	text-align: center;
+	width: 100px;
+	padding: 5px;
+	border-radius: 20px;
+	border: white solid 2px;
+}
+div.bottone-home:hover{
+	transition: 0.5s;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.bottone{
+	text-decoration: none;
+	margin: 5px;
+}
+
+/**********************
+	header & search bar
+**********************/
+
+table, tbody, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+div.header{
+	padding-top: 5px;
+	text-align: center;
+}
+div.header .title1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 70px;
+}
+.sub-title1{
+	font-size: 25px;1
+	margin: 0px;
+	margin-bottom: 55px
+}
+div.search-bar{
+	border-radius: 10px;
+	text-align: center;
+	margin: 20px auto;
+	padding: 0;
+	width: 400px;
+	background-color: #FFF;
+	cursor: pointer;
+}
+div.search-bar input.search-box{
+	font-size: 25px;
+	padding-left: 5px;
+	width: 320px;
+	font-family: 'prova';
+	border-color: grey;
+	border-radius: 10px;
+}
+div.search-bar .button{
+	margin-right: 8px;
+}
+button, .button{
+	margin: 0;
+	border-radius: 10px;
+	border: 0;
+	background-color: #222;
+	font-size: 20px;
+	min-width: 50px;
+	cursor: pointer;
+}
+button:hover, .button:hover{
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+/**********************
+				Weather
+**********************/
+
+div.main-result{
+	max-width: 700px;
+	margin: auto;
+}
+div.main-result .title{
+	font-size: 100px;
+}
+div.main-result .sub-title{
+	font-size: 50px;
+}
+div.instant-info{
+	background-color: rgba( 255, 255, 255, 0.2 );
+	width: auto;
+	text-align: center;
+	padding: 5px;
+	margin: 0;
+	border-radius: 5px;
+	border: solid 3px black;
+}
+div.main-result #temp{
+	font-size: 80px;
+	margin-left: auto;
+}
+a#state{
+	font-size: 20px;
+}
+div#main-measures table{
+	width: 100%;
+}
+tr{
+  background-color: rgba( 255,255,255,0.2 );
+}
+div#main-measures table tr td{
+	width: 50%;
+	margin: 0;
+	padding: 10px;
+	border: solid 3px black;
+	font-size: 25px;
+}
+ td.left{
+	border-radius: 5px 0 0 5px ;
+}
+td.rigth{
+	border-radius: 0 5px 5px 0;
+}
+
+/**********************
+				footer
+**********************/
+
+div.footer{
+	text-align: center;
+}
+div#credits img.icon{
+	width: 200px;
+	height: auto;
+	margin-left: 25px;
+	vertical-align: middle;
+}
+/**********************
+	 sweetalert style
+**********************/
+
+.swal-modal, .swal-button{
+	border-radius: 20px;
+	font-family: 'Prova';
+}
+.swal-modal .swal-title{
+	font-family: 'Prova';
+}
+@media screen and ( max-device-width: 400px ){
+	div.header .title{
+		font-size: 30px;
+	}
+	div.search-bar{
+		width: 300px;
+	}
+}
